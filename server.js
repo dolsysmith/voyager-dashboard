@@ -13,7 +13,7 @@ var ledgersFunds,
 
 var pyOptions = {
 	mode: 'text',
-	pythonPath: '/home/dsmith/COLLDEV/bin/python',
+	pythonPath: '**the full path to your Python shell**',
 	scriptPath: './'
 };
 
