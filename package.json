@@ -1,6 +1,6 @@
 {
-	"name": "colldev-dashboard",
-	"version": "0.0.1",
+	"name": "voyager-dashboard",
+	"version": "1.0.0",
 	"description": "dashboard data utilities for visualizing collections-related data",
 	"author": "Dolsy Smith <dsmith@gwu.edu>",
 	"main": "module/colldev-dashboard.js",
@@ -11,5 +11,5 @@
 		"pg-promise": "~5.2.1",
 		"python-shell": "~0.4.0"
 	},
-	"license": true
+	"license": "MIT"
 }

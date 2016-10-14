@@ -1,6 +1,5 @@
 
-#!/home/dsmith/COLLDEV/bin/python
-
+#!Bash line for your Python distro
 
 # Script to fetch data from Voyager/Oracle and populate a postgres backend ###
 # Uses cx_Oracle module (requires Oracle InstantClient on Windows)
@@ -13,23 +12,20 @@ import sqlalchemy
 import os
 from datetime import datetime
 
-#log_dir = 'c:/users/dsmith/desktop/code/dashboard' 
-log_dir = '/home/dsmith/COLLDEV/'
+log_dir = '/home/your_directory/your_log_director/'
 
 # set up logging for db calls
 logging.basicConfig(filename= log_dir + 'dashboard_' + datetime.today().strftime('%d-%m-%Y') +'.log', filemode='w')
-engine = sqlalchemy.create_engine(('postgresql://colldev:GWL1br@r13s@localhost:5432/colldev_db'))
+engine = sqlalchemy.create_engine(('postgresql://username:password@localhost:portnum/db_name'))
 db_logger = logging.getLogger('sqlalchemy.engine')
 db_logger.setLevel(logging.INFO)
-#handler = logging.FileHandler('dashboard_' + datetime.today().strftime('%d-%m-%Y') +'.log')
-#db_logger.addHandler(handler)
 
 # We do this to make sure that the Oracle client is using the right encoding
 os.environ["NLS_LANG"] = "AMERICAN_AMERICA.AL32UTF8"
 
 # our login info for the Voyager database
-dsn = cx_Oracle.makedsn('oracle.wrlc.org', '1521', 'VGER')
-connection = cx_Oracle.connect('dbread', 'libs8db', dsn)
+dsn = cx_Oracle.makedsn('see: http://cx-oracle.readthedocs.io/en/latest/module.html#cx_Oracle.makedsn')
+connection = cx_Oracle.connect('username', 'password', dsn)
 
 # helper function for parsing results from the SQL cursor object
 def get_data(cursor):
