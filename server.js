@@ -13,7 +13,7 @@ var ledgersFunds,
 
 var pyOptions = {
 	mode: 'text',
-	pythonPath: '**the full path to your Python shell**',
+	pythonPath: 'home/ENV/bin/python',
 	scriptPath: './'
 };
 

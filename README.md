@@ -79,7 +79,7 @@ Installation has been tested on a Linux server (ubuntu 14.04 LTS) and a Windows 
 
 		~~~~
 		var pyOptions = { mode: 'text',
-						pythonPath: '**the full path to your Python shell**',
+						pythonPath: 'home/ENV/bin/python',
 						scriptPath: './'
 					};
 		~~~~
