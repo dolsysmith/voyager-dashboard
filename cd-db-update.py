@@ -1,5 +1,5 @@
 
-#!Bash line for your Python distro
+#!/home/ENV/bin/python
 
 # Script to fetch data from Voyager/Oracle and populate a postgres backend ###
 # Uses cx_Oracle module (requires Oracle InstantClient on Windows)
@@ -24,7 +24,7 @@ db_logger.setLevel(logging.INFO)
 os.environ["NLS_LANG"] = "AMERICAN_AMERICA.AL32UTF8"
 
 # our login info for the Voyager database
-dsn = cx_Oracle.makedsn('see: http://cx-oracle.readthedocs.io/en/latest/module.html#cx_Oracle.makedsn')
+dsn = cx_Oracle.makedsn('**DSN for the Voyager database**')
 connection = cx_Oracle.connect('username', 'password', dsn)
 
 # helper function for parsing results from the SQL cursor object

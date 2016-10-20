@@ -62,6 +62,8 @@ Installation has been tested on a Linux server (ubuntu 14.04 LTS) and a Windows 
 
 		`connection = cx_Oracle.connect('**username**', '**password**', dsn)` Credentials for Oracle Voyager access 
 
+		In addition, lines 63-65, 156-57, and 204-206 -- in the Voyager SQL queries -- should be modified for your local institution and needs. (Additional changes to the SQL may be necessary, depending on your configuration of Voyager.) 
+
 	7. Modify the following lines in **dashboard/public/queries.json**:
 
 		~~~~ 
