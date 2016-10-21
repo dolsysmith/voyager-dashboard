@@ -1,6 +1,10 @@
 # voyager-dashboard
 
-A lightweight web app for viewing Voyager data in chart and table form. 
+A lightweight web app for viewing Voyager data in chart and table form. Optimized for the Chrome browser. (May not work in IE.)
+
+## Components
+
+A Python/SQL script loads Voyager data into a local database for simplified, fast lookup.  A web server, written in Javascript, serves data to a web page written with D3.js, which displays the data dynamically. The server script updates the local database daily, though this can be easily re-configured.  
 
 ## Requirements 
 * Python 3.4 or greater
