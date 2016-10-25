@@ -1,6 +1,8 @@
 # voyager-dashboard
 
-A lightweight web app for viewing Voyager data in chart and table form. Optimized for the Chrome browser. (May not work in IE.)
+A lightweight web app for viewing Voyager acquisitions data. Optimized for the Chrome browser. (May not work in IE.) A timeseries chart shows the rate of spending over time at either the ledger or the fund level. A table shows allocations, expenditures, and commitments across funds; click on a fund row displays a modal table of line-item purchases.
+
+![Voyager dashboard screenshot](screenshots/screen1.png)
 
 ## Components
 
