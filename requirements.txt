@@ -1,0 +1,4 @@
+pandas == 0.18.1
+psycopg2 == 2.6.1
+SQLAlchemy == 1.0.13
+cx_oracle == 5.2.1
